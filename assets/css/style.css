@@ -27,6 +27,9 @@ header {
   z-index: 99;
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 /* (header a) this targets any a tag that is a decendant of the header, this code removes the line */
@@ -46,10 +49,10 @@ h1 {
   font-size: 110%;
   letter-spacing: 4px;
   list-style-type: none;
-  
+
 }
 
-#menu > li {
+#menu>li {
   margin-bottom: 1em;
 }
 
@@ -68,10 +71,26 @@ nav {
   padding: 0 1rem;
   left: 0;
   display: none;
+  /*This hides the navbar until clicked by user*/
+  top: 100%;
+
 }
 
+/* Nav toggle */
+#nav-toggle:checked~nav {
+  display: block;
 
-/* Main */
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+/* Main content */
 main {
   background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
