@@ -129,6 +129,7 @@ main {
   color: #ffffff;
 }
 
+/* reasons section*/
 #reasons {
   width: 90%;
   margin: 20px auto;
@@ -143,17 +144,37 @@ main {
 
 #benefits-physical>div,
 #benefits-mental>div {
-    line-height: 20px;
-    margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 #benefits p {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+
+/* reasons image*/
+
+#circle-cover-bg {
+  /*had to use different file path again and go thorugh css before images*/
+  background: url('../css/images/reasons-image.webp') no-repeat top center / cover;
+  height: 90vw;
+  width: 90vw;
+  margin-bottom: 20px;
+  /* Makes the square image into a circle */
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
